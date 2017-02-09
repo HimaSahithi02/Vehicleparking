@@ -1,0 +1,49 @@
+<div ng-app="app" ng-controller="vController">
+	<table>
+		<tr>
+			<td>Enter VehicleId:</td>
+			<td><input type="text" ng-model="vehicleId" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button value="Search" ng-click="SearchCall()"></button></td>
+		</tr>
+	</table>
+
+
+</div>
+<div  ng-if="messSucc">
+
+<table>
+		<tr>
+			<td>VehicleId:</td>
+			<td><input type="text" ng-model="vData.vehicleId" /></td>
+		</tr>
+		<tr>
+			<td>VehicleType:</td>
+			<td><input type="text" ng-model="vData.vehicleType" /></td>
+		</tr>
+		<tr>
+			<td>Intime:</td>
+			<td><input type="text" ng-model="intime" /></td>
+		</tr>
+		<tr>
+			<td>Outtime:</td>
+			<td><input type="text" ng-model="outtime" /></td>
+		</tr>
+		<tr>
+			<td>cost:</td>
+			<td><input type="text" ng-model="cost" /></td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<button value="exit" ng-click="Exit()"></button>
+			</td>
+		</tr>
+
+	</table>
+
+
+</div>

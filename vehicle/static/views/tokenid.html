@@ -1,0 +1,25 @@
+<div ng-controller="tokenCtrl">
+	<table>
+		<tr>
+			<td>TokenId:</td>
+			<td>{{ tokenJSON.tokenid }}</td>
+		</tr>
+		<tr>
+			<td>VehileId:</td>
+			<td>{{ tokenJSON.vehicle_Id }}</td>
+		</tr>
+		<tr>
+			<td>VehicleType:</td>
+			<td>{{ tokenJSON.vehicleType }}</td>
+		</tr>
+		<tr>
+			<td>InTime:</td>
+			<td>{{ tokenJSON.inTime |date:'dd/MM/yyyy hh:mm'}}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="#/">Park</a></td>
+		</tr>
+	</table>
+
+</div>

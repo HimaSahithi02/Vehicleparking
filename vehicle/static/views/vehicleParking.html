@@ -1,0 +1,34 @@
+
+
+<div ng-app="app" ng-controller="myController">
+	<table>
+		<tr>
+			<td>veicleId:</td>
+			<td><input type="text" ng-model="vehicleId" /></td>
+		</tr>
+
+		<tr>
+			<td>VehicleType</td>
+			<td><select ng-model="type">
+					<option value="TWO">TWO</option>
+					<option value="FOUR">FOUR</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Intime:</td>
+			<td><input type="date" ng-model="inTime" datetime-picker
+				date-format="yyyy-MM-dd HH:mm:ss" size="30" /></td>
+		</tr>
+
+		<tr>
+			<td><button ng-click="parkCall()">Park</button></td>
+			<td><button>reset</button></td>
+			<td><a href="#/vehicle">Exists</a></td>
+			<td><a href="#/capacity">capacity</a></td>
+		</tr>
+
+	</table>
+</div>
+
+
+<div ng-if="message">the token is : {{ token }}</div>

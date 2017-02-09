@@ -1,0 +1,33 @@
+<div ng-controller="exitController">
+	<table>
+		<tr>
+			<td>VehicleId:</td>
+			<td>{{ exitJSON.vehicleId }}</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>VehicleType:</td>
+			<td>{{ exitJSON.vehicleType }}</td>
+
+		</tr>
+		<tr>
+			<td>Vehicle InTime:</td>
+			<td>{{ exitJSON.inTime |date:'dd/MM/yyyy hh:mm' }}</td>
+		</tr>
+		<tr>
+			<td>Vehicle OutTime:</td>
+			<td>{{ exitJSON.outTime |date:'dd/MM/yyyy hh:mm' }}</td>
+
+		</tr>
+		<tr>
+			<td>Cost For Parking:</td>
+			<td>{{ exitJSON.cost }}</td>
+
+		</tr>
+		<tr>
+			<td>
+			<td><a href="#/">Park</a></td>
+			</td>
+		</tr>
+	</table>
+</div>
