@@ -39,7 +39,7 @@ public class VehicleServiceImpl implements VehicleService {
 			Timestamp outTime = new Timestamp(System.currentTimeMillis());
 			DateTime inTime1 = new DateTime(vehiclePark.getInTime().getTime());
 			DateTime outTime2 = new DateTime(outTime.getTime());
-			Integer hours = (Days.daysBetween(inTime1.withTimeAtStartOfDay(), outTime2.withTimeAtStartOfDay())
+			Integer hours = (Days.daysBetween(inTime1.withTimeAtStartOfDay(),outTime2.withTimeAtStartOfDay())
 					.getDays()) * 24;
 			Integer hourostheday = outTime2.getHourOfDay() - inTime1.getHourOfDay();
 			hours += hourostheday;
