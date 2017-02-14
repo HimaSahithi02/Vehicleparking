@@ -15,7 +15,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "VEHICLEPARK")
-@SequenceGenerator(name = "VEHICLE_SUENCE", sequenceName = "vehicle_park_id_seq")
 public class VehiclePark {
 	@Id
 	@GeneratedValue
@@ -28,7 +27,7 @@ public class VehiclePark {
 	private Token token;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "VEHICLE_SUENCE")
+	@GeneratedValue
 	@Column(name = "id")
 	public Integer getId() {
 		return id;
