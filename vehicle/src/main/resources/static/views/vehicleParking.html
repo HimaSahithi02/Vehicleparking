@@ -3,27 +3,29 @@
 <div ng-app="app" ng-controller="myController">
 <div id="error" class="row" ng-show="errorMsg" style="text-align:center;color:red">{{ errorMsg }}</div>
 	<table>
+	
 		<tr>
-			<td><strong>veicleId:</strong></td>
-			<td><input type="text" ng-model="vehicleId" /></td>
+			<td><h4><strong>veicleId:</strong></h4></td>
+			<td><h4><input type="text" ng-model="vehicleId" /></h4></td>
+			
 		</tr>
 
 		<tr>
-			<td><strong>VehicleType</strong></td>
-			<td><select ng-model="type" ng-change="CheckCapacity()">
+			<td><h4><strong>VehicleType</strong></h4></td>
+			<td><h4><select ng-model="type" ng-change="CheckCapacity()">
 					<option value="TWO">TWO</option>
 					<option value="FOUR">FOUR</option>
-			</select></td>
+			</select></h4></td>
 		</tr>
 		<tr>
-			<td><strong>Intime:</strong></td>
-			<td><input type="date" ng-model="inTime" datetime-picker
-				date-format="yyyy-MM-dd HH:mm:ss" size="30" value="{{ inTime | date:'dd/mm/yyyy HH:MM'}}"></td>
+			<td><h4><strong>Intime:</strong></h4></td>
+			<td><h4><input type="date" ng-model="inTime" datetime-picker
+				date-format="yyyy-MM-dd HH:mm:ss" size="30" value="{{ inTime | date:'dd/mm/yyyy HH:MM'}}"></h4></td>
 		</tr>
 
 		<tr>
-			<td><button ng-click="parkCall()"><img alt="" src="images/park3.png" size =14></button></td>
-			<td><button ng-click="reset()"><img alt="" src="images/reset3.png" size =14></button></td>
+			<td><button ng-click="parkCall()"><img alt="" src="/images/park3.png" size =30></button></td>
+			<td><button ng-click="reset()"><img alt="" src="/images/reset3.png" size =30></button></td>
 		</tr>
 
 	</table>
